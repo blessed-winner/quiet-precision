@@ -1,20 +1,29 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Blessed Winner — Backend Engineer
 
-# Run and deploy your AI Studio app
+Personal portfolio and showcase of engineering projects, architectural patterns, and systems design.
 
-This contains everything you need to run your app locally.
+## Overview
 
-View your app in AI Studio: https://ai.studio/apps/e027c71c-aa09-4cb7-b8e9-1671a0df8ffc
+This repository contains the source code for my professional portfolio. The site is designed with a **Brutalist Editorial** aesthetic, emphasizing clarity, high-contrast typography, and mechanical precision. It serves as a living document of my work in backend architecture and API design.
 
-## Run Locally
+## The Work
 
-**Prerequisites:**  Node.js
+- **Echo**: Spaced repetition engine built with Java and Spring Boot.
+- **Inkwell**: Library management API utilizing NestJS and TypeORM.
+- **Luxe**: Production-grade e-commerce backend with PostgreSQL.
+- **CipherNote**: Encrypted note-taking API with robust authentication boundaries.
 
+## Technical Focus
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+- **Languages**: Java, TypeScript, SQL
+- **Frameworks**: Spring Boot, NestJS
+- **Infrastructure**: Docker, PostgreSQL, MySQL
+- **Design**: REST API Architecture, System Design, OpenAPI/Swagger
+
+---
+
+### Contact
+
+- **Email**: [blessedwinner66@gmail.com](mailto:blessedwinner66@gmail.com)
+- **LinkedIn**: [Impano Blessed Winner](https://www.linkedin.com/in/impano-blessed-winner-b5b628336/)
+- **GitHub**: [@blessed-winner](https://github.com/blessed-winner)
