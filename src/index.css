@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&family=Inter:wght@300&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Inter", sans-serif;
+  
+  --color-primary: #1a1a1a;
+  --color-secondary: #6b6b6b;
+  --color-tertiary: #a0a0a0;
+  --color-border: #e0e0e0;
+}
+
+@layer base {
+  body {
+    @apply bg-white text-primary antialiased;
+    font-weight: 300;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-serif font-light;
+  }
+
+  /* Reset all rounded corners */
+  * {
+    border-radius: 0 !important;
+  }
+}
+
+@layer utilities {
+  .label-text {
+    @apply font-sans uppercase text-[10px] tracking-[0.18em];
+  }
+  
+  .hairline-border {
+    border: 0.5px solid var(--color-border);
+  }
+  
+  .hairline-b {
+    border-bottom: 0.5px solid var(--color-border);
+  }
+  
+  .hairline-t {
+    border-top: 0.5px solid var(--color-border);
+  }
+  
+  .hairline-l {
+    border-left: 0.5px solid var(--color-border);
+  }
+  
+  .hairline-r {
+    border-right: 0.5px solid var(--color-border);
+  }
+}
+
+/* Noise Texture */
+.noise-texture::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.025;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* Ripple Animation */
+@keyframes ripple {
+  from {
+    transform: scale(0);
+    opacity: 0.4;
+  }
+  to {
+    transform: scale(6);
+    opacity: 0;
+  }
+}
+
+.ripple-effect {
+  position: absolute;
+  border-radius: 50% !important; /* Ripple needs to be circular */
+  background: rgba(0, 0, 0, 0.1);
+  pointer-events: none;
+  animation: ripple 500ms ease-out forwards;
+}
+
+/* Marquee Animation */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 18s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Custom Cursor inside Hero */
+.custom-cursor-dot {
+  position: fixed;
+  width: 6px;
+  height: 6px;
+  background: #1a1a1a;
+  border-radius: 50% !important;
+  pointer-events: none;
+  z-index: 1000;
+  transform: translate(-50%, -50%);
+}
+
+.hide-cursor {
+  cursor: none !important;
+}
