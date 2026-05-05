@@ -16,8 +16,8 @@ This repository contains the source code for my professional portfolio. The site
 ## Technical Focus
 
 - **Languages**: Java, TypeScript, SQL
-- **Frameworks**: Spring Boot, NestJS
-- **Infrastructure**: Docker, PostgreSQL, MySQL
+- **Frameworks**: Spring Boot, NestJS,Express
+- **Infrastructure**: Docker, PostgreSQL, MySQL,GitHub Actions(CI/CD)
 - **Design**: REST API Architecture, System Design, OpenAPI/Swagger
 
 ---
