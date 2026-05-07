@@ -6,7 +6,8 @@ Personal portfolio and showcase of engineering projects, architectural patterns,
 
 This repository contains the source code for my professional portfolio. The site is designed with a **Brutalist Editorial** aesthetic, emphasizing clarity, high-contrast typography, and mechanical precision. It serves as a living document of my work in backend architecture and API design.
 
-##View Live Site: [blessedwinner.vercel.app](https://blessedwinner.vercel.app)
+## View Live Site: 
+  [blessedwinner.vercel.app](https://blessedwinner.vercel.app)
 
 ## The Work
 
